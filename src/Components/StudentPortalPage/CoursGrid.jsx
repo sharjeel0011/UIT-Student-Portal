@@ -50,7 +50,7 @@ const CourseGrid = ({ courses }) => {
           key={index}
           className="bg-white p-4 rounded-lg shadow text-center"
         >
-          <h2 className="text-xl font-bold">{course.city}</h2>
+          <h2 className="text-xl font-bold">{course.courseName}</h2>
           <p>Batch {course.batch}</p>
           <a href="#" className="text-red-500">
             Click here to view courses

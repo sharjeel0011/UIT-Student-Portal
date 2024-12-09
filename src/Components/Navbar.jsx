@@ -10,30 +10,19 @@ const Navbar = () => {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
-            <li className="text-white">
-              <Link to="/">Home</Link> {/* Link to Home route */}
-            </li>
-            <li className="text-white">
-              <Link to="/Studentportal">Student Portal</Link> {/* Link to StudentPortal route */}
-            </li>
-            <li className="text-white">
-              <Link to="/coursfee">Fee Quarter Portal</Link> {/* Link to StudentPortal route */}
-            </li>
-            <li className="text-white">
-              <Link to="/Signup">Sign Up</Link> {/* Link to Signup route */}
-            </li>
-            <li className="text-white">
-              <Link to="/login">Login</Link> {/* Link to Login route */}
-            </li>
             <li>
               <details>
-                <summary className="text-white">Parent</summary>
-                <ul className="bg-base-100 rounded-t-none p-2">
-                  <li><Link to="/link1">Link 1</Link></li> {/* Example Link */}
-                  <li><Link to="/link2">Link 2</Link></li> {/* Example Link */}
+                <summary className="text-white">Availabel Programs</summary>
+                <ul className="bg-white rounded-t-none p-2">
+                  <li><Link to="/link1">Website development</Link></li> {/* Example Link */}
+                  <li><Link to="/link2">Graphich Designing</Link></li> {/* Example Link */}
                 </ul>
               </details>
             </li>
+
+            <li className="text-blue-600 bg-white px-2 rounded-2xl ">
+              <Link to="/Signup">Apply </Link>
+            </li> 
           </ul>
         </div>
       </div>

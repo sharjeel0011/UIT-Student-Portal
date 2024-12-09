@@ -8,6 +8,12 @@ import Footer from '../../Components/Footer';
 import StudentPortal from '../../Screens/StudentPortal/StudentPortal';
 import Protected from '../../Components/StudentPortalPage/Protected';
 import Coursfee from '../../Components/StudentPortalPage/CoursFee'
+import HomePortal from '../../Screens/StudentPortal/Home'
+import ExamScreen from '../../Screens/StudentPortal/Exam';
+import OnlineLectures from '../../Screens/StudentPortal/OnlineLectures';
+import PaidVideoSection from'../../Screens/StudentPortal/PaidVideoSection'
+import TextBooks from '../../Screens/StudentPortal/TextBook';
+import Profile from '../../Screens/StudentPortal/ProfileDetails';
 const Router = () => {
   return (
 <>
@@ -16,11 +22,17 @@ const Router = () => {
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path='Studentportal' element={<Protected><StudentPortal/></Protected>} />
-<Route path='coursfee' element={<Protected><Coursfee/></Protected>} />
+<Route path='home' element={<Protected><HomePortal/></Protected>} />
+<Route path='payments' element={<Protected><Coursfee/></Protected>} />
+<Route path='onlinelectures' element={<Protected><OnlineLectures/></Protected>} />
+<Route path='PaidonlineLectures' element={<Protected><PaidVideoSection/></Protected>} />
+<Route path='profile' element={<Protected><Profile/></Protected>} />
+<Route path='textbookdownload' element={<Protected><TextBooks/></Protected>} />
+<Route path='exam' element={<Protected><ExamScreen/></Protected>} />
 <Route path='Signup' element={<StudentSignUpScreen/>} />
 <Route path='login' element={<LoginScreen/>} />
 </Routes>
-<Footer/>
+{/* <Footer/> */}
 </BrowserRouter>
 
 
