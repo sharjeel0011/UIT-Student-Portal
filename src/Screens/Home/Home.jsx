@@ -26,6 +26,7 @@
 
 
 import React from "react";
+import Footer from "../../Components/Footer";
 import HeroSection from "../../Components/HomePage/Hero";
 import AvailablePrograms from "../../Components/HomePage/AvailabelPrograms";
 import YouTubeSeries from "../../Components/HomePage/YoutubeSeries";
@@ -38,6 +39,7 @@ const Home = () => {
         <HeroSection />
         <AvailablePrograms courses={courses} /> 
         <YouTubeSeries />
+        <Footer/>
       </div>
     </>
   );

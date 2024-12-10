@@ -19,7 +19,9 @@ const Navbar = () => {
                 </ul>
               </details>
             </li>
-
+            {/* <li className="text-blue-600  ">
+              <Link to="/adminPortal">admin </Link>
+            </li>  */}
             <li className="text-blue-600 bg-white px-2 rounded-2xl ">
               <Link to="/Signup">Apply </Link>
             </li> 
