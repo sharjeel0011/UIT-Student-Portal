@@ -14,6 +14,16 @@ import OnlineLectures from '../../Screens/StudentPortal/OnlineLectures';
 import PaidVideoSection from'../../Screens/StudentPortal/PaidVideoSection'
 import TextBooks from '../../Screens/StudentPortal/TextBook';
 import Profile from '../../Screens/StudentPortal/ProfileDetails';
+import Notifications from '../../Screens/StudentPortal/Notification';
+import CourseDetail from '../../Screens/CourseDetailPage/CourseDetail';
+import { courses } from '../../assets/Data';
+import AvailablePrograms from '../../Components/HomePage/AvailabelPrograms';
+import AdmissionForm from '../../Screens/AdmissionForm/Admission';
+import HomeAdmin from '../../Screens/Adminportal.jsx/AdminportalHome';
+import AdminLogin from '../../Screens/Adminportal.jsx/AdminLogin';
+import AdminSignup from '../../Screens/Adminportal.jsx/SignupLogin';
+import VideoAdmin from '../../Screens/Adminportal.jsx/VideoSection'
+import TextAdmin from '../../Screens/Adminportal.jsx/TextbookSection'
 const Router = () => {
   return (
 <>
@@ -21,7 +31,13 @@ const Router = () => {
 <Navbar/>
 <Routes>
 <Route path="/" element={<Home />} />
-<Route path='Studentportal' element={<Protected><StudentPortal/></Protected>} />
+<Route path='Studentportal' element={<StudentPortal/>} />
+<Route path='adminPortal' element={<HomeAdmin/>} />
+<Route path='Videoadmin' element={<VideoAdmin/>} />
+<Route path='textadmin' element={<TextAdmin/>} />
+<Route path='admissionform' element={<AdmissionForm courses={courses} />} />
+<Route path="availabelprograms" element={<AvailablePrograms courses={courses} />} />
+<Route path="/courses/:courseId" element={<CourseDetail courses={courses} />} />
 <Route path='home' element={<Protected><HomePortal/></Protected>} />
 <Route path='payments' element={<Protected><Coursfee/></Protected>} />
 <Route path='onlinelectures' element={<Protected><OnlineLectures/></Protected>} />
@@ -29,6 +45,9 @@ const Router = () => {
 <Route path='profile' element={<Protected><Profile/></Protected>} />
 <Route path='textbookdownload' element={<Protected><TextBooks/></Protected>} />
 <Route path='exam' element={<Protected><ExamScreen/></Protected>} />
+<Route path='notification' element={<Protected><Notifications/></Protected>} />
+<Route path='loginadmin' element={<AdminLogin/>} />
+<Route path='signupadmin' element={<AdminSignup/>} />
 <Route path='Signup' element={<StudentSignUpScreen/>} />
 <Route path='login' element={<LoginScreen/>} />
 </Routes>

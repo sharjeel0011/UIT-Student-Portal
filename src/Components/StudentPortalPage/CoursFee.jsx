@@ -72,7 +72,7 @@ const CourseStatus = () => {
 
       {/* Main Content */}
       <div className="flex-1 p-6">
-        <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg p-6">
+        <div className="max-w-5xl mx-auto bg-white rounded-lg shadow-lg p-12">
           {/* Title */}
           <h1 className="text-2xl font-semibold mb-6 text-gray-800">
             Certified Agentic and Robotic AI Engineer
@@ -96,7 +96,7 @@ const CourseStatus = () => {
         </div>
 
         {/* Quarter Form */}
-        <div className="mt-6">
+        <div className="mt-6 p-4">
           <QuaterFormPage />
         </div>
       </div>

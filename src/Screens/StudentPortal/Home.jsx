@@ -212,7 +212,7 @@ const StudentPortalWelcome = () => {
       <Sidebar />
 
       {/* Main Content */}
-      <div className="flex flex-1 flex-col justify-center items-center px-0">
+      <div className="flex flex-1 flex-col justify-center items-center px-14">
         <h1 className="text-2xl font-bold text-teal-700 text-center">
           Welcome to U It Student Portal
         </h1>

@@ -61,7 +61,7 @@ const ExamScreen = () => {
   ];
 
   return (
-    <div className="flex min-h-screen bg-gray-100">
+    <div className="flex min-h-screen p-20 bg-gray-100">
       {/* Sidebar */}
       <Sidebar />
 

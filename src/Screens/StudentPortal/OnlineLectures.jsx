@@ -25,7 +25,7 @@ const OnlineLectures = () => {
       <Sidebar className="w-1/4 min-h-screen bg-white shadow-md" />
 
       {/* Main Content */}
-      <div className="p-6 bg-gray-100 min-h-screen">
+      <div className="p-20 bg-gray-100 min-h-screen">
         <h1 className="text-2xl font-bold text-blue-900 mb-4">ONLINE LECTURES</h1>
         <div className="space-y-4">
           {lectures.map((lecture) => (
