@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
   return (
     <div>
-    <div className="bg-blue-900 text-white w-64 flex flex-col">
+    <div className="bg-blue-900 text-white w-64 h-full flex flex-col">
       <div className="flex items-center justify-center h-20 border-b border-blue-800">
         <img src="https://placehold.co/50x50" alt="Logo" className="h-12" />
       </div>
