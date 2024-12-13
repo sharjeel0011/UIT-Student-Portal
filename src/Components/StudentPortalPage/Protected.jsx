@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import Sidebar from './Sidebar';
 import { useNavigate } from 'react-router-dom';
+import StudentNav from '../StudentNav';
 
 const Protected = ({ children }) => {
   const [allowStudent, setAllowStudent] = useState(true);
@@ -16,9 +17,13 @@ const Protected = ({ children }) => {
   return (
     <div>
       {allowStudent ? (
+        <div>   
+          <StudentNav/>
         <div className="flex">
+       
           {/* <Sidebar /> */}
           <main className="flex-1 p-0">{children}</main>
+        </div>
         </div>
       ) : (
         <div className="flex justify-center items-center h-screen">

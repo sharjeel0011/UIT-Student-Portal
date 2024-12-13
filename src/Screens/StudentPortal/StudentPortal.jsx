@@ -169,6 +169,7 @@ import CourseCard from "../../Components/StudentPortalPage/CoursCard";
 import CourseGrid from "../../Components/StudentPortalPage/CoursGrid";
 import AvailablePrograms from "../../Components/HomePage/AvailabelPrograms";
 import { courses } from "../../assets/Data";
+import StudentNav from "../../Components/StudentNav";
 
 const StudentPortal = () => {
   const userImage =
@@ -194,6 +195,8 @@ const StudentPortal = () => {
   ];
 
   return (
+    <>
+    <StudentNav/>
     <div className="bg-gray-100">
     <div className="w-full  lg:w-4/5 px-2 sm:px-8 py-4 mx-auto">
       <Header userImage={userImage} />
@@ -211,6 +214,7 @@ const StudentPortal = () => {
     </div>
     </div>
     </div>
+    </>
   );
 };
 
