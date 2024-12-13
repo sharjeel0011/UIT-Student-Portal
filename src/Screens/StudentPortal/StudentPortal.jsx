@@ -167,6 +167,8 @@ import React from "react";
 import Header from "../../Components/StudentPortalPage/Header";
 import CourseCard from "../../Components/StudentPortalPage/CoursCard";
 import CourseGrid from "../../Components/StudentPortalPage/CoursGrid";
+import AvailablePrograms from "../../Components/HomePage/AvailabelPrograms";
+import { courses } from "../../assets/Data";
 
 const StudentPortal = () => {
   const userImage =
@@ -204,8 +206,9 @@ const StudentPortal = () => {
           />
         ))}
       </div>
-      <h1 className="text-2xl font-bold mt-8">New Available Courses</h1>
-      <CourseGrid courses={newCourses} />
+    <div className="mt-8">
+    <AvailablePrograms  courses={courses} />
+    </div>
     </div>
     </div>
   );

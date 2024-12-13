@@ -27,9 +27,9 @@ const CourseDetail = ({ courses }) => {
       <div className="text-center bg-blue-900 text-white py-10 shadow-lg">
         <h1 className="text-3xl font-bold">{course.title}</h1>
         <p className="text-sm mt-2">{course.description}</p>
-        <Link to='/admissionform'>
+        <Link to='/Signup'>
         <button className="px-6 mt-4 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
-          Apply Now
+          Enroll Now
         </button>
         </Link>
 
