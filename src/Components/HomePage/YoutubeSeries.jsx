@@ -63,6 +63,7 @@
 
 import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player/youtube";
+import AdminNav from "../AdminNav";
 
 const YouTubeSeries = () => {
   const videos = [
@@ -105,7 +106,11 @@ const YouTubeSeries = () => {
   }, [currentVideo]);
 
   return (
+<div>
+ 
+
     <div className="flex flex-col md:flex-row h-screen bg-gray-900 text-white">
+  
       {/* Video Player Section */}
       <div className="flex-1 p-4 mb-6 md:mb-0">
         <div className="relative pb-[56.25%] h-0">
@@ -148,6 +153,7 @@ const YouTubeSeries = () => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };

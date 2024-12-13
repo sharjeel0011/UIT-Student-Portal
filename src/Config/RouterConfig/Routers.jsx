@@ -25,18 +25,22 @@ import AdminSignup from '../../Screens/Adminportal.jsx/SignupLogin';
 import VideoAdmin from '../../Screens/Adminportal.jsx/VideoSection'
 import TextAdmin from '../../Screens/Adminportal.jsx/TextbookScreen'
 import AddCourse from '../../Screens/Adminportal.jsx/AddCourse';
+import AddNotfaction from '../../Screens/Adminportal.jsx/AddNotifaction';
+import UploadYouTubeVideos from '../../Screens/Adminportal.jsx/UploadYoutubeVideosPublic';
 const Router = () => {
   return (
 <>
 <BrowserRouter>
-<Navbar/>
+{/* <Navbar/> */}
 <Routes>
 <Route path="/" element={<Home />} />
 <Route path='Studentportal' element={<StudentPortal/>} />
 <Route path='adminPortal' element={<HomeAdmin/>} />
 <Route path='Videoadmin' element={<VideoAdmin/>} />
 <Route path='textadmin' element={<TextAdmin/>} />
+<Route path='publicytvideos' element={<UploadYouTubeVideos/>} />
 <Route path='addcourse' element={<AddCourse/>} />
+<Route path='addnotifaction' element={<AddNotfaction/>} />
 <Route path='admissionform' element={<AdmissionForm courses={courses} />} />
 <Route path="availabelprograms" element={<AvailablePrograms courses={courses} />} />
 <Route path="/courses/:courseId" element={<CourseDetail courses={courses} />} />

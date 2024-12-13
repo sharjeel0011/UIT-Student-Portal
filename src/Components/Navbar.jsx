@@ -10,15 +10,19 @@ const Navbar = () => {
         </div>
         <div className="flex-none">
           <ul className="menu menu-horizontal px-1">
-            <li>
+            {/* <li>
               <details>
                 <summary className="text-white">Availabel Programs</summary>
                 <ul className="bg-white rounded-t-none p-2">
-                  <li><Link to="/link1">Website development</Link></li> {/* Example Link */}
-                  <li><Link to="/link2">Graphich Designing</Link></li> {/* Example Link */}
+                  <li><Link to="/link1">Website development</Link></li> 
+                  <li><Link to="/link2">Graphich Designing</Link></li> 
                 </ul>
               </details>
-            </li>
+            </li> */}
+
+            <li className="text-white    ">
+              <Link to="/Signup"> Signup</Link>
+            </li> 
             <li className="text-blue-600 bg-white px-2 rounded-2xl ">
               <Link to="/availabelprograms">Apply </Link>
             </li> 

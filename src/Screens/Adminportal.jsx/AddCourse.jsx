@@ -257,6 +257,7 @@
 
 import React, { useState } from "react";
 import Sidebar from "../../Components/Admincomponents/Sidebar";
+import AdminNav from "../../Components/AdminNav";
 
 const AddCourse = () => {
     
@@ -308,9 +309,11 @@ const AddCourse = () => {
     setBatches(batches.filter((_, i) => i !== index));
   
   return (
+ 
     <div className="flex min-h-screen bg-gray-100">
+      
     {/* Sidebar */}
-    <Sidebar className="w-1/4 min-h-screen bg-white shadow-md" />
+    <Sidebar className=" min-h-screen bg-white shadow-md" />
     <div className="p-6 max-w-4xl mx-auto bg-white shadow-md rounded-lg">
       <h1 className="text-2xl font-bold mb-4">Add New Course</h1>
       <form onSubmit={handleSubmit}>

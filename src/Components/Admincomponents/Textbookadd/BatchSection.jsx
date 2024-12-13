@@ -1,7 +1,10 @@
 import React from "react";
+import AdminNav from "../../AdminNav";
 
 const BatchSelection = ({ course, onSelectBatch }) => {
   return (
+    <div>
+      <AdminNav/>
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-6">Select a Batch for {course.title}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -18,6 +21,7 @@ const BatchSelection = ({ course, onSelectBatch }) => {
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
