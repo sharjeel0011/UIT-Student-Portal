@@ -34,6 +34,14 @@ const Sidebar = () => {
             </a>
           </li>
           </Link>
+          <Link to='/addcourse'>
+          <li className="mb-4">
+            <a href="#" className="flex items-center text-gray-400">
+              <FaBook className="mr-3" />
+              <span>Add course</span>
+            </a>
+          </li>
+          </Link>
         </ul>
       </nav>
       <div className="px-4 py-6 border-t border-blue-800">

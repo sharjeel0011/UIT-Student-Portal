@@ -23,7 +23,8 @@ import HomeAdmin from '../../Screens/Adminportal.jsx/AdminportalHome';
 import AdminLogin from '../../Screens/Adminportal.jsx/AdminLogin';
 import AdminSignup from '../../Screens/Adminportal.jsx/SignupLogin';
 import VideoAdmin from '../../Screens/Adminportal.jsx/VideoSection'
-import TextAdmin from '../../Screens/Adminportal.jsx/TextbookSection'
+import TextAdmin from '../../Screens/Adminportal.jsx/TextbookScreen'
+import AddCourse from '../../Screens/Adminportal.jsx/AddCourse';
 const Router = () => {
   return (
 <>
@@ -35,6 +36,7 @@ const Router = () => {
 <Route path='adminPortal' element={<HomeAdmin/>} />
 <Route path='Videoadmin' element={<VideoAdmin/>} />
 <Route path='textadmin' element={<TextAdmin/>} />
+<Route path='addcourse' element={<AddCourse/>} />
 <Route path='admissionform' element={<AdmissionForm courses={courses} />} />
 <Route path="availabelprograms" element={<AvailablePrograms courses={courses} />} />
 <Route path="/courses/:courseId" element={<CourseDetail courses={courses} />} />
