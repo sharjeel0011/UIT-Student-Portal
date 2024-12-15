@@ -1,80 +1,5 @@
 
 
-// import React, { useState } from "react";
-// import { Link } from "react-router-dom";
-// import {
-//   FaTachometerAlt,
-//   FaUser,
-//   FaCreditCard,
-//   FaVideo,
-//   FaBook,
-//   FaEdit,
-//   FaBullhorn,
-// } from "react-icons/fa";
-
-// const Sidebar = () => {
-//   const [isOpen, setIsOpen] = useState(false);
-
-//   const menuItems = [
-//     { icon: <FaTachometerAlt />, label: "Dashboard", route: "/home" },
-//     { icon: <FaUser />, label: "Profile", route: "/profile" },
-//     { icon: <FaCreditCard />, label: "Payment", route: "/payments" },
-//     { icon: <FaVideo />, label: "Online Lectures", route: "/onlinelectures" },
-//     { icon: <FaBook />, label: "Text Books", route: "/textbookdownload" },
-//     { icon: <FaEdit />, label: "Exam", route: "/exam" },
-//     { icon: <FaBullhorn />, label: "Announcements", route: "/notification" },
-//   ];
-
-//   return (
-//     <div className="relative">
-//       {/* Overlay */}
-//       {isOpen && (
-//         <div
-//           className="fixed inset-0 bg-black bg-opacity-50 z-40"
-//           onClick={() => setIsOpen(false)} // Close sidebar when clicking outside
-//         ></div>
-//       )}
-
-//       {/* Sidebar */}
-//       <div
-//         className={`fixed top-0 left-0 bg-blue-900 text-white min-h-screen transition-all duration-300 z-50 ${
-//           isOpen ? "w-36" : "w-16"
-//         } flex flex-col`}
-//       >
-//         {/* Toggle Button */}
-//         <button
-//           onClick={() => setIsOpen(!isOpen)}
-//           className="w-8 h-8 bg-blue-900 text-white rounded-full flex items-center justify-center focus:outline-none ml-4 mt-4"
-//         >
-//           {isOpen ? "→" : "←"}
-//         </button>
-
-//         {/* Sidebar Content */}
-//         <div className="p-4 text-xl font-bold">{isOpen && "Dashboard"}</div>
-//         <ul className="space-y-4 p-4">
-//           {menuItems.map((item, index) => (
-//             <li key={index}>
-//               <Link
-//                 to={item.route}
-//                 className="flex items-center space-x-2 cursor-pointer hover:bg-blue-700 p-2 rounded-md"
-//               >
-//                 {item.icon}
-//                 {isOpen && <span>{item.label}</span>}
-//               </Link>
-//             </li>
-//           ))}
-//         </ul>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Sidebar;
-
-
-
-
-
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
@@ -97,7 +22,7 @@ const Sidebar = () => {
     { icon: <FaCreditCard />, label: "Payment", route: "/payments" },
     { icon: <FaVideo />, label: "Online Lectures", route: "/onlinelectures" },
     { icon: <FaBook />, label: "Text Books", route: "/textbookdownload" },
-    { icon: <FaEdit />, label: "Exam", route: "/exam" },
+  
     { icon: <FaBullhorn />, label: "Announcements", route: "/notification" },
   ];
 

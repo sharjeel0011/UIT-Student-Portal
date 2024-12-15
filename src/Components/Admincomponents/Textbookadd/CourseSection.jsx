@@ -3,7 +3,7 @@ import AdminNav from "../../AdminNav";
 const CourseSelection = ({ courses, onSelectCourse }) => {
   return (
     <div>
-      <AdminNav/>
+   
     <div className="p-6">
       <h1 className="text-3xl font-bold mb-6">Select a Course</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

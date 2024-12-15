@@ -55,7 +55,7 @@ const AdminSignup = () => {
         </form>
         <p className="text-sm text-center text-gray-600 mt-4">
           Already have an account?{" "}
-          <a href="/login" className="text-blue-500 hover:underline">
+          <a href="/loginadmin" className="text-blue-500 hover:underline">
             Login
           </a>
         </p>

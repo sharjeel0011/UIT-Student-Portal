@@ -9,7 +9,7 @@ const AdminNav = () => {
   </div>
   <div className="flex-none">
     <ul className="menu menu-horizontal px-1">
-      <li className='text-white'><Link to='/adminPortal'> ADMIN HOME</Link></li>
+      <li className='text-white'><Link to='/adminPortal019'> ADMIN HOME</Link></li>
       {/* <li>
         <details>
           <summary>Parent</summary>

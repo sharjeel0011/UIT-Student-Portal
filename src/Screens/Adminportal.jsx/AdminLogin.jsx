@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 const AdminLogin = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
@@ -33,19 +33,16 @@ const AdminLogin = () => {
             />
           </div>
           {/* Login Button */}
+          <Link to="/adminPortal019">
           <button
             type="submit"
             className="w-full bg-blue-500 text-white py-2 rounded-lg font-medium hover:bg-blue-600 transition duration-300"
           >
             Login
           </button>
+          </Link>
         </form>
-        <p className="text-sm text-center text-gray-600 mt-4">
-          Don't have an account?{" "}
-          <a href="/signup" className="text-blue-500 hover:underline">
-            Sign Up
-          </a>
-        </p>
+        
       </div>
     </div>
   );

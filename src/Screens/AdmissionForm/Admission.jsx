@@ -40,7 +40,7 @@ const AdmissionForm = ({ courses = [] }) => {
         onSubmit={handleSubmit}
         className="bg-white shadow-lg rounded-lg p-8 w-full max-w-3xl"
       >
-        <h1 className="text-2xl font-bold text-center mb-6">Admission Form</h1>
+        <h1 className="text-2xl font-bold text-center mb-6">Enrol Form</h1>
         
         {/* Row 1 */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -263,8 +263,139 @@ const AdmissionForm = ({ courses = [] }) => {
         </button>
         </Link>
       </form>
+
     </div>
   );
 };
 
 export default AdmissionForm;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from "react";
+// import { useNavigate } from "react-router-dom";
+
+// const AdmissionForm = ({ courses = [] }) => {
+//   const navigate = useNavigate();
+//   const [formData, setFormData] = useState({
+//     country: "",
+//     city: "",
+//     course: "",
+//     computerProficiency: "",
+//     fullName: "",
+//     fatherName: "",
+//     phone: "",
+//     cnic: "",
+//     dob: "",
+//     gender: "",
+//     address: "",
+//     qualification: "",
+//     siblings: "",
+//     photo: null,
+//   });
+
+//   const [showModal, setShowModal] = useState(false);
+
+//   const handleChange = (e) => {
+//     const { name, value, files } = e.target;
+//     setFormData({
+//       ...formData,
+//       [name]: files ? files[0] : value,
+//     });
+//   };
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+//     // Validate form or perform API integration here
+//     setShowModal(true); // Show the modal after submission
+//   };
+
+//   const handleGenerateVoucher = () => {
+//     setShowModal(false); // Hide the modal
+//     navigate("/payments"); // Navigate to the payments page
+//   };
+
+//   return (
+//     <div className="bg-gray-100 min-h-screen flex justify-center items-center">
+//       <form
+//         onSubmit={handleSubmit}
+//         className="bg-white shadow-lg rounded-lg p-8 w-full max-w-3xl"
+//       >
+//         <h1 className="text-2xl font-bold text-center mb-6">Enrol Form</h1>
+
+//         {/* Form Fields */}
+//         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+//           <div>
+//             <label className="block mb-1 font-semibold">Select Country</label>
+//             <select
+//               name="country"
+//               value={formData.country}
+//               onChange={handleChange}
+//               className="w-full border rounded px-3 py-2"
+//               required
+//             >
+//               <option value="">Select country</option>
+//               <option value="Pakistan">Pakistan</option>
+//             </select>
+//           </div>
+//           <div>
+//             <label className="block mb-1 font-semibold">Select City</label>
+//             <select
+//               name="city"
+//               value={formData.city}
+//               onChange={handleChange}
+//               className="w-full border rounded px-3 py-2"
+//               required
+//             >
+//               <option value="">Select city</option>
+//               <option value="Karachi">Karachi</option>
+//               <option value="Lahore">Lahore</option>
+//               <option value="Islamabad">Islamabad</option>
+//             </select>
+//           </div>
+//         </div>
+
+//         {/* Other fields */}
+//         {/* (Add all other fields here, keeping the existing ones from your current code) */}
+
+//         <button
+//           type="submit"
+//           className="mt-6 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 w-full"
+//         >
+//           Enroll Now
+//         </button>
+//       </form>
+
+//       {/* Modal */}
+//       {showModal && (
+//         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
+//           <div className="bg-white rounded-lg p-6 w-96">
+//             <h2 className="text-xl font-bold mb-4">Voucher Generation</h2>
+//             <p className="mb-4">A first-quarter fee voucher has been generated. Click below to proceed.</p>
+//             <button
+//               onClick={handleGenerateVoucher}
+//               className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 w-full"
+//             >
+//               Generate Voucher
+//             </button>
+//           </div>
+//         </div>
+//       )}
+//     </div>
+//   );
+// };
+
+// export default AdmissionForm;

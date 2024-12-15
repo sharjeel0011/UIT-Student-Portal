@@ -176,6 +176,22 @@ const Sidebar = () => {
                 </a>
               </li>
             </Link>
+            <Link to="/Coursesdetails">
+              <li className="mb-4">
+                <a href="#" className="flex items-center text-gray-400">
+                  <FaBook className="mr-3" />
+                  {isOpen && <span>Courses Details</span>}
+                </a>
+              </li>
+            </Link>
+            <Link to="/signupadmin">
+              <li className="mb-4">
+                <a href="#" className="flex items-center text-gray-400">
+                  <FaBook className="mr-3" />
+                  {isOpen && <span>Create Admin</span>}
+                </a>
+              </li>
+            </Link>
           </ul>
         </nav>
 
