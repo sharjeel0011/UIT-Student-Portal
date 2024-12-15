@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AdminNav from "../AdminNav";
 import { useNavigate } from "react-router-dom";
+import Sidebar from '../../Components/Admincomponents/Sidebar'
 
 const AdminProtected = ({ children }) => {
   const [isAdmin, setIsAdmin] = useState(true); // Replace with actual admin authentication logic
@@ -19,10 +20,10 @@ const AdminProtected = ({ children }) => {
       <AdminNav/>
         <div className="flex">
          
-         
+         <Sidebar/>
 
           {/* Main Admin Content */}
-          <main className="flex-1 p-0 bg-gray-100 min-h-screen">
+          <main className="flex-1 p-14 bg-gray-100 min-h-screen">
             {children}
           </main>
         </div>

@@ -128,7 +128,7 @@ const Sidebar = () => {
         {/* Sidebar Content */}
         <nav className="flex-1 px-4 py-6">
           <ul>
-            <Link to="/adminPortal">
+            <Link to="/adminPortal019">
               <li className="mb-4">
                 <a href="#" className="flex items-center text-white">
                   <FaHome className="mr-3" />
@@ -140,7 +140,7 @@ const Sidebar = () => {
               <li className="mb-4">
                 <a href="#" className="flex items-center text-gray-400">
                   <FaVideo className="mr-3" />
-                  {isOpen && <span>Add Video</span>}
+                  {isOpen && <span>Add Video on Batches</span>}
                 </a>
               </li>
             </Link>
@@ -156,7 +156,7 @@ const Sidebar = () => {
               <li className="mb-4">
                 <a href="#" className="flex items-center text-gray-400">
                   <FaBook className="mr-3" />
-                  {isOpen && <span>Add Book</span>}
+                  {isOpen && <span>Add Books on Batches</span>}
                 </a>
               </li>
             </Link>
@@ -164,7 +164,7 @@ const Sidebar = () => {
               <li className="mb-4">
                 <a href="#" className="flex items-center text-gray-400">
                   <FaBook className="mr-3" />
-                  {isOpen && <span>Add Course</span>}
+                  {isOpen && <span>Add New Course</span>}
                 </a>
               </li>
             </Link>
@@ -172,7 +172,7 @@ const Sidebar = () => {
               <li className="mb-4">
                 <a href="#" className="flex items-center text-gray-400">
                   <FaBook className="mr-3" />
-                  {isOpen && <span>Add Notification</span>}
+                  {isOpen && <span>Add Notification on Batches</span>}
                 </a>
               </li>
             </Link>
@@ -183,7 +183,28 @@ const Sidebar = () => {
                   {isOpen && <span>Courses Details</span>}
                 </a>
               </li>
+               </Link>
+
+               <Link to="/StudentDetails">
+              <li className="mb-4">
+                <a href="#" className="flex items-center text-gray-400">
+                  <FaBook className="mr-3" />
+                  {isOpen && <span>Student Details </span>}
+                </a>
+              </li>
+               </Link>
+
+              <Link to="/coursesaction">
+              
+              
+              <li className="mb-4">
+                <a href="#" className="flex items-center text-gray-400">
+                  <FaBook className="mr-3" />
+                  {isOpen && <span>Courses Manage</span>}
+                </a>
+              </li>
             </Link>
+           
             <Link to="/signupadmin">
               <li className="mb-4">
                 <a href="#" className="flex items-center text-gray-400">
@@ -197,12 +218,7 @@ const Sidebar = () => {
 
         <div className="px-4 py-6 border-t border-blue-800">
           <ul>
-            <li className="mb-4">
-              <a href="#" className="flex items-center text-gray-400">
-                <FaCog className="mr-3" />
-                {isOpen && <span>Settings</span>}
-              </a>
-            </li>
+           
             <li>
               <a href="#" className="flex items-center text-gray-400">
                 <FaSignOutAlt className="mr-3" />

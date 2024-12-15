@@ -69,28 +69,28 @@ const YouTubeSeries = () => {
   const videos = [
     { 
       id: 1, 
-      url: "https://youtu.be/r6Nd2Yqldjw?si=A7ARmFpkm_WQHLbg", 
+      url: "https://youtu.be/rJ1Qao09CFI?si=TWjDg9T2L2fpy5LL", 
       title: "Artificial Intelligence", 
       duration: "10:15", 
       date: "Dec 2024" 
     },
     { 
       id: 2, 
-      url: "https://youtu.be/r6Nd2Yqldjw?si=A7ARmFpkm_WQHLbg", 
+      url: "https://youtu.be/YJyXfjbBmc8?si=CluztledEk2lb6Ro", 
       title: "Blockchain", 
       duration: "12:30", 
       date: "Nov 2024" 
     },
     { 
       id: 3, 
-      url: "https://www.youtube.com/watch?v=example3", 
+      url: "https://youtu.be/6mBO2vqLv38?si=8yGITJGQj3WsM19l", 
       title: "Internet of Things", 
       duration: "8:45", 
       date: "Oct 2024" 
     },
     { 
       id: 4, 
-      url: "https://www.youtube.com/watch?v=example4", 
+      url: "https://youtu.be/p-88GN1WVs8?si=8dp2g-nek50f4d4J", 
       title: "Cloud Native Computing", 
       duration: "14:00", 
       date: "Sept 2024" 

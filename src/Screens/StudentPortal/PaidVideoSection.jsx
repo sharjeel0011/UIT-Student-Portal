@@ -133,14 +133,14 @@ const App = () => {
   ];
 
   return (
-    <div className="flex min-h-screen bg-gray-900">
+    <div className="flex min-h-screen mt-14 bg-gray-900">
       {/* Sidebar */}
       <div className="w-1/4">
         <Sidebar />
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col md:flex-row flex-grow "> {/* Added margin-left */}
+      <div className="flex  flex-col md:flex-row flex-grow "> {/* Added margin-left */}
         {/* Video Player */}
         <div className="flex-1 flex justify-center items-center p-4">
           <ReactPlayer

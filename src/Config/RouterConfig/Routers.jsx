@@ -118,7 +118,7 @@ import AddNotfaction from '../../Screens/Adminportal.jsx/AddNotifaction';
 import UploadYouTubeVideos from '../../Screens/Adminportal.jsx/UploadYoutubeVideosPublic';
 import CourseDetails from '../../Screens/Adminportal.jsx/CourseDashboard';
 import StudentDetails from '../../Screens/Adminportal.jsx/StudentsDetails';
-
+import CoursesAction from '../../Screens/Adminportal.jsx/CoursesActions'
 // Import the IDCard Component
 import IDCard from '../../Components/StudentPortalPage/GetIdCard';
 
@@ -131,6 +131,7 @@ const Router = () => {
           <Route path="/" element={<Home />} />
           <Route path="Studentportal" element={<StudentPortal />} />
           <Route path="Coursesdetails" element={<AdminProtected><CourseDetails courses={courses} /></AdminProtected>} />
+          <Route path="coursesaction" element={<AdminProtected><CoursesAction  /></AdminProtected>} />
           <Route path="StudentDetails" element={<AdminProtected><StudentDetails /></AdminProtected>} />
           <Route path="adminPortal019" element={<AdminProtected><HomeAdmin /></AdminProtected>} />
           <Route path="Videoadmin" element={<AdminProtected><VideoAdmin /></AdminProtected>} />
