@@ -145,7 +145,8 @@ const Router = () => {
           <Route path="home" element={<Protected><HomePortal /></Protected>} />
           <Route path="payments" element={<Protected><Coursfee /></Protected>} />
           <Route path="onlinelectures" element={<Protected><OnlineLectures /></Protected>} />
-          <Route path="PaidonlineLectures" element={<Protected><PaidVideoSection /></Protected>} />
+        
+          <Route path="/player/:id" element={<Protected><PaidVideoSection /></Protected>} />
           <Route path="profile" element={<Protected><Profile /></Protected>} />
           <Route path="textbookdownload" element={<Protected><TextBooks /></Protected>} />
           <Route path="exam" element={<Protected><ExamScreen /></Protected>} />

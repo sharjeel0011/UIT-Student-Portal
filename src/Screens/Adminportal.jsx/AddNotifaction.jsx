@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import CourseSelection from "../../Components/Admincomponents/Textbookadd/CourseSection";
 import BatchSelection from "../../Components/Admincomponents/Textbookadd/BatchSection";
 import NotificationManagement from "../../Components/Admincomponents/Notifactionadd/NotifactionManagement";
-import { courses } from "../../assets/Data";
+import { CourseNew } from "../../assets/Data";
 
 const NotificationScreen = () => {
   const [selectedCourse, setSelectedCourse] = useState(null);
@@ -10,7 +10,7 @@ const NotificationScreen = () => {
 
   // Step 1: Course Selection
   if (!selectedCourse) {
-    return <CourseSelection courses={courses} onSelectCourse={setSelectedCourse} />;
+    return <CourseSelection courses={CourseNew} onSelectCourse={setSelectedCourse} />;
   }
 
   // Step 2: Batch Selection

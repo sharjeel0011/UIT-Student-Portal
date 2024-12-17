@@ -75,6 +75,8 @@ export const courses = [
     ],
     quarters: [
       { quarter: 1, title: "Introduction to AI", fee: "USD 200", duration: "3 months" },
+      { quarter: 2, title: "Introduction to AI", fee: "USD 200", duration: "3 months" },
+
     ],
     batches: [
       {
@@ -220,6 +222,174 @@ export const courses = [
 
 
 
+export const CourseNew = [
+  {
+    courseTitle: "Advanced Web Development",
+    courseDescription: "Learn advanced concepts in web development including React, Node.js, and more.",
+  
+    modules: [
+      {
+        title: "Module 1: React Basics",
+        description: "Introduction to React, including JSX, components, and state management.",
+        quarterId: "1"
+      },
+      {
+        title: "Module 2: Backend Development with Node.js",
+        description: "Building APIs with Node.js, Express, and MongoDB.",
+        quarterId: "2"
+      },
+      {
+        title: "Module 3: Advanced React and Redux",
+        description: "Mastering advanced React patterns and managing state with Redux.",
+        quarterId: "3"
+      }
+    ],
+    batches: [
+      {
+        batchId: "Batch 1",
+        startDate: "2024-01-01",
+        endDate: "2024-03-01",
+        timing: "10:00 AM - 12:00 PM",
+        instructor: "Instructor 1"
+        
+      },
+      {
+        batchId: "Batch 2",
+        startDate: "2024-04-01",
+        endDate: "2024-06-01",
+        timing: "02:00 PM - 04:00 PM",
+        instructor: "Instructor 2"
+      }
+    ],
+    courseQuarters: [
+      {
+        quarterId: "1",
+        title: "Quarter 1: Web Basics",
+        fee: "1000"
+      },
+      {
+        quarterId: "2",
+        title: "Quarter 2: Backend Development",
+        fee: "1200"
+      },
+      {
+        quarterId: "3",
+        title: "Quarter 3: Advanced React",
+        fee: "1400"
+      }
+    ]
+  },
+  {
+    courseTitle: "Data Science with Python",
+    courseDescription: "Learn data science and machine learning using Python.",
+    steps: ["Step 1: Introduction to Data Science", "Step 2: Data Analysis with Pandas", "Step 3: Machine Learning with Scikit-learn"],
+    modules: [
+      {
+        title: "Module 1: Introduction to Data Science",
+        description: "Understanding the basics of data science, data types, and Python libraries.",
+        quarterId: "1"
+      },
+      {
+        title: "Module 2: Data Cleaning and Analysis",
+        description: "Using Pandas for data manipulation and analysis.",
+        quarterId: "2"
+      },
+      {
+        title: "Module 3: Machine Learning with Scikit-learn",
+        description: "Introduction to machine learning algorithms and building predictive models.",
+        quarterId: "3"
+      }
+    ],
+    batches: [
+      {
+        batchId: "Batch 1",
+        startDate: "2024-02-01",
+        endDate: "2024-04-01",
+        timing: "09:00 AM - 12:00 PM",
+        instructor: "Instructor 3"
+      },
+      {
+        batchId: "Batch 2",
+        startDate: "2024-05-01",
+        endDate: "2024-07-01",
+        timing: "03:00 PM - 06:00 PM",
+        instructor: "Instructor 4"
+      }
+    ],
+    courseQuarters: [
+      {
+        quarterId: "1",
+        title: "Quarter 1: Data Science Introduction",
+        fee: "1100"
+      },
+      {
+        quarterId: "2",
+        title: "Quarter 2: Data Cleaning",
+        fee: "1300"
+      },
+      {
+        quarterId: "3",
+        title: "Quarter 3: Machine Learning",
+        fee: "1500"
+      }
+    ]
+  },
+  {
+    courseTitle: "Mobile App Development with Flutter",
+    courseDescription: "Learn to develop cross-platform mobile apps using Flutter and Dart.",
+    steps: ["Step 1: Introduction to Flutter", "Step 2: Building Basic Apps", "Step 3: Advanced Flutter Features"],
+    modules: [
+      {
+        title: "Module 1: Introduction to Flutter",
+        description: "Getting started with Flutter, understanding widgets, and creating simple apps.",
+        quarterId: "1"
+      },
+      {
+        title: "Module 2: Building Interactive Apps",
+        description: "Creating responsive and interactive mobile apps using Flutter.",
+        quarterId: "2"
+      },
+      {
+        title: "Module 3: Advanced Flutter Features",
+        description: "Exploring advanced Flutter features like Firebase integration and custom animations.",
+        quarterId: "3"
+      }
+    ],
+    batches: [
+      {
+        batchId: "Batch 1",
+        startDate: "2024-03-01",
+        endDate: "2024-05-01",
+        timing: "11:00 AM - 02:00 PM",
+        instructor: "Instructor 5"
+      },
+      {
+        batchId: "Batch 2",
+        startDate: "2024-06-01",
+        endDate: "2024-08-01",
+        timing: "01:00 PM - 04:00 PM",
+        instructor: "Instructor 6"
+      }
+    ],
+    courseQuarters: [
+      {
+        quarterId: "1",
+        title: "Quarter 1: Flutter Basics",
+        fee: "1050"
+      },
+      {
+        quarterId: "2",
+        title: "Quarter 2: Building Apps",
+        fee: "1250"
+      },
+      {
+        quarterId: "3",
+        title: "Quarter 3: Advanced Flutter",
+        fee: "1450"
+      }
+    ]
+  }
+];
 
 
 
@@ -340,3 +510,41 @@ export const studentData = [
     status: "Eliminated", // Status added
   },
 ];
+
+
+
+
+
+
+
+export const lectureData = {
+  Quarter1: [
+    { id: 1, title: "Lecture 1", url: "https://www.w3schools.com/html/mov_bbb.mp4" },
+    { id: 2, title: "Lecture 2", url: "https://www.learningcontainer.com/wp-content/uploads/2020/05/sample-mp4-file.mp4" },
+  ],
+  Quarter2: [
+    { id: 3, title: "Lecture 3", url: "https://www.w3schools.com/html/movie.mp4" },
+    { id: 4, title: "Lecture 4", url: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4" },
+  ],
+  Quarter3: [
+    { id: 3, title: "Lecture 3", url: "https://www.w3schools.com/html/movie.mp4" },
+    { id: 4, title: "Lecture 4", url: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4" },
+  ],  Quarter4: [
+    { id: 3, title: "Lecture 3", url: "https://www.w3schools.com/html/movie.mp4" },
+    { id: 4, title: "Lecture 4", url: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4" },
+  ],  Quarter5: [
+    { id: 3, title: "Lecture 3", url: "https://www.w3schools.com/html/movie.mp4" },
+    { id: 4, title: "Lecture 4", url: "https://samplelib.com/lib/preview/mp4/sample-5s.mp4" },
+  ]
+};
+
+
+
+
+
+
+
+
+
+
+

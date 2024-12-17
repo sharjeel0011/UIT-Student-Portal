@@ -185,14 +185,14 @@ const Sidebar = () => {
               </li>
                </Link>
 
-               <Link to="/StudentDetails">
+               {/* <Link to="/StudentDetails">
               <li className="mb-4">
                 <a href="#" className="flex items-center text-gray-400">
                   <FaBook className="mr-3" />
                   {isOpen && <span>Student Details </span>}
                 </a>
               </li>
-               </Link>
+               </Link> */}
 
               <Link to="/coursesaction">
               

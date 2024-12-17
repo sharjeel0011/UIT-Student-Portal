@@ -13,7 +13,7 @@ const CourseSelection = ({ courses, onSelectCourse }) => {
             className="p-4 border border-gray-300 rounded-lg shadow-md hover:shadow-lg cursor-pointer"
             onClick={() => onSelectCourse(course)}
           >
-            <h2 className="text-xl font-semibold">{course.title}</h2>
+            <h2 className="text-xl font-semibold">{course.courseTitle}</h2>
             <p className="text-gray-600">{course.description}</p>
           </div>
         ))}
