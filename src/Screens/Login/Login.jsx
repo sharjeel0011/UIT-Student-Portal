@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 const LoginScreen = () => {
   const [formData, setFormData] = useState({
     email: "",
@@ -56,9 +57,9 @@ const LoginScreen = () => {
             />
           </div>
           <div className="text-sm">
-            <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
+            <Link to={'/forgotpassword'}  className="font-medium text-blue-600 hover:text-blue-500">
               Forgot your password?
-            </a>
+            </Link>
           </div>
           <div>
             <Link to='/Studentportal'>

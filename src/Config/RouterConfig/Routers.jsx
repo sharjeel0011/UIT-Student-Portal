@@ -121,6 +121,7 @@ import StudentDetails from '../../Screens/Adminportal.jsx/StudentsDetails';
 import CoursesAction from '../../Screens/Adminportal.jsx/CoursesActions'
 // Import the IDCard Component
 import IDCard from '../../Components/StudentPortalPage/GetIdCard';
+import ForgotPasswordScreen from '../../Screens/Forgotpass';
 
 const Router = () => {
   return (
@@ -145,7 +146,6 @@ const Router = () => {
           <Route path="home" element={<Protected><HomePortal /></Protected>} />
           <Route path="payments" element={<Protected><Coursfee /></Protected>} />
           <Route path="onlinelectures" element={<Protected><OnlineLectures /></Protected>} />
-        
           <Route path="/player/:id" element={<Protected><PaidVideoSection /></Protected>} />
           <Route path="profile" element={<Protected><Profile /></Protected>} />
           <Route path="textbookdownload" element={<Protected><TextBooks /></Protected>} />
@@ -155,6 +155,7 @@ const Router = () => {
           <Route path="signupadmin" element={<AdminSignup />} />
           <Route path="Signup" element={<StudentSignUpScreen />} />
           <Route path="login" element={<LoginScreen />} />
+          <Route path="forgotpassword" element={<ForgotPasswordScreen />} />
 
           {/* Add the new route for the IDCard page */}
           <Route path="id-card" element={<IDCard />} /> {/* New route for IDCard */}
